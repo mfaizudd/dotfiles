@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/alphaweasel/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -84,7 +84,13 @@ antigen apply
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
 
-. /mnt/linux-data/src/z/z.sh
+if [ -f /mnt/linux-data/src/z/z.sh ]
+then
+    . /mnt/linux-data/src/z/z.sh
+elif [ -f $HOME/opt/z/z.sh ]
+then
+    . $HOME/opt/z/z.sh
+fi
 
 # Environment variables
 export QT_QPA_PLATFORMTHEME=qt5ct
