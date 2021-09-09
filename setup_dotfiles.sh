@@ -1,7 +1,8 @@
 #!/bin/bash
 
 echo "==> Setting up antigen..."
-curl -L git.io/antigen > antigen.zsh
+mkdir -p $HOME/.local/bin
+curl -L git.io/antigen > $HOME/.local/bin/antigen.zsh
 
 echo "==> Setting up vundle..."
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
