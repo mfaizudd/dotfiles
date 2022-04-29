@@ -8,3 +8,7 @@ git fetch
 git checkout master
 git pull
 ```
+Optional: disable git status for home directory:
+```
+git config oh-my-zsh.hide-info 1
+```
