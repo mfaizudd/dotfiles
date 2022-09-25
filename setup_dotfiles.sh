@@ -1,4 +1,8 @@
 #!/bin/bash
+echo "==> Setting up znap"
+mkdir -p $HOME/.config/znap/
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-snap.git
+source $HOME/.config/znap/zsh-snap/install.zsh
 
 echo "==> Setting up antigen..."
 mkdir -p $HOME/.local/bin
