@@ -84,12 +84,9 @@ antigen apply
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
 
-if [ -f /mnt/linux-data/src/z/z.sh ]
+if [ -f $HOME/.local/lib/z.sh ]
 then
-    . /mnt/linux-data/src/z/z.sh
-elif [ -f $HOME/opt/z/z.sh ]
-then
-    . $HOME/opt/z/z.sh
+    . $HOME/.local/lib/z.sh
 fi
 
 # Environment variables
@@ -123,6 +120,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="lvim"
+alias lg="lazygit"
 export PATH=/home/weasel/.meteor:$PATH
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.local/bin
