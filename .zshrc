@@ -1,4 +1,3 @@
-source ~/.config/znap/zsh-snap/znap.zsh
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -77,11 +76,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.local/bin/antigen.zsh
 
 # User configuration
-
-# Znap
-znap source marlonrichert/zsh-autocomplete
-
-# antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
