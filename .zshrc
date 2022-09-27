@@ -119,10 +119,24 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="lvim"
 alias lg="lazygit"
-export PATH=/home/weasel/.meteor:$PATH
+vim() {
+  if [ -x "$(command -v lvim)" ]; then
+    command lvim "$@"
+  else
+    command vim "$@"
+  fi
+}
+mux() {
+  if [ -x "$(command -v tmuxinator)" ]; then
+    command tmuxinator "$@"
+  else
+    echo "tmuxinator not installed"
+  fi
+}
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$(yarn global bin)
+export PATH=$PATH:$HOME/bin
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fpath+=${ZDOTDIR:-~}/.zsh_functions
