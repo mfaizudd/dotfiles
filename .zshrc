@@ -120,6 +120,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lg="lazygit"
+alias nh="sudo nethogs -b"
 vim() {
   if [ -x "$(command -v lvim)" ]; then
     command lvim "$@"
