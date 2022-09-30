@@ -84,11 +84,6 @@ antigen apply
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
 
-if [ -f $HOME/.local/lib/z.sh ]
-then
-    . $HOME/.local/lib/z.sh
-fi
-
 # Environment variables
 export QT_QPA_PLATFORMTHEME=qt5ct
 
@@ -120,23 +115,13 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lg="lazygit"
-vim() {
-  if [ -x "$(command -v lvim)" ]; then
-    command lvim "$@"
-  else
-    command vim "$@"
-  fi
-}
-mux() {
-  if [ -x "$(command -v tmuxinator)" ]; then
-    command tmuxinator "$@"
-  else
-    echo "tmuxinator not installed"
-  fi
-}
-vpn() {
-  command sudo wg-quick $@ wg0
-}
+UTILS_FOLDER=$HOME/.local/share/mfaizudd-utils
+. $UTILS_FOLDER/scripts.sh
+if [ -f $UTILS_FOLDER/z.sh ]
+then
+    . $UTILS_FOLDER/z.sh
+fi
+
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$(yarn global bin)
