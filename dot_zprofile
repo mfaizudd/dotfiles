@@ -3,6 +3,10 @@ then
     emulate sh -c '. ~/.profile'
 fi
 
+if [ -x "$(command -v lvim)" ]; then
+  export EDITOR=lvim
+fi
+
 export ANDROID_HOME=/mnt/linux-data/opt/android/sdk
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.dotnet/tools"
