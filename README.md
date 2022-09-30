@@ -1,14 +1,20 @@
 # mfaizudd's dotfiles
 
+## Prerequisites
+ - Install zsh
+ - Install [oh-my-zsh](https://ohmyz.sh)
+ - Install [chezmoi](https://chezmoi.io)
+```sh
+snap install chezmoi --classic
 ```
-cd ~
-git init
-git remote add origin https://github.com/mfaizudd/dotfiles
-git fetch
-git checkout master
-git pull
+
+Apply
+```sh
+chezmoi init --apply https://github.com/mfaizudd/dotfiles
 ```
-Optional: disable git status for home directory:
+
+Additional setups
+```sh
+setup_dotfiles
 ```
-git config oh-my-zsh.hide-info 1
-```
+
