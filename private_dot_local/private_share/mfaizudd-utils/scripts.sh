@@ -13,6 +13,13 @@ mux() {
     echo "tmuxinator not installed"
   fi
 }
+cat() {
+  if [ -x "$(command -v bat)" ]; then
+    command bat "$@"
+  else
+    command cat "$@"
+  fi
+}
 vpn() {
   command sudo wg-quick $@ wg0
 }
