@@ -184,6 +184,7 @@ lvim.plugins = {
     event = "BufRead",
     config = function() require "lsp_signature".on_attach() end,
   },
+  { "mattn/emmet-vim" }
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
