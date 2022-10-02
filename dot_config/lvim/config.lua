@@ -39,7 +39,7 @@ lvim.keys.normal_mode["<C-M-s>"] = ":ASToggle<cr>"
 --     ["<C-p>"] = actions.cycle_history_prev,
 --   },
 --   -- for normal mode
---   n = {
+--  n = {
 --     ["<C-j>"] = actions.move_selection_next,
 --     ["<C-k>"] = actions.move_selection_previous,
 --   },
@@ -56,6 +56,16 @@ lvim.keys.normal_mode["<C-M-s>"] = ":ASToggle<cr>"
 --   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
 --   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Workspace Diagnostics" },
 -- }
+lvim.builtin.which_key.mappings["t"] = {
+  name = "Trouble",
+  t = { "<cmd>TroubleToggle<cr>", "trouble" },
+  w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "workspace" },
+  d = { "<cmd>TroubleToggle document_diagnostics<cr>", "document" },
+  q = { "<cmd>TroubleToggle quickfix<cr>", "quickfix" },
+  l = { "<cmd>TroubleToggle loclist<cr>", "loclist" },
+  r = { "<cmd>TroubleToggle lsp_references<cr>", "references" },
+}
+lvim.builtin.which_key.mappings["d"] = { "<cmd>lua vim.diagnostic.open_float()<cr>", "Show diagnostics" }
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
@@ -191,16 +201,32 @@ lvim.plugins = {
   {
     "Pocco81/auto-save.nvim",
     config = function()
-      require("auto-save").setup {
-
-      }
+      require("auto-save").setup()
     end
   },
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
     config = function() require "lsp_signature".on_attach() end,
-  }
+  },
+  {
+    "folke/trouble.nvim",
+    cmd = "TroubleToggle",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  },
+  -- {
+  --   "windwp/nvim-ts-autotag",
+  --   config = function()
+  --     require("nvim-ts-autotag").setup()
+  --   end,
+  -- },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
