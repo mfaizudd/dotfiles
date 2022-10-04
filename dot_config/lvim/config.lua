@@ -242,3 +242,7 @@ lvim.plugins = {
 --     require("nvim-treesitter.highlight").attach(0, "bash")
 --   end,
 -- })
+
+
+-- Additional configuration
+vim.o.termguicolors = true
