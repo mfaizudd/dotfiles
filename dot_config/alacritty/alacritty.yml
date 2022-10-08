@@ -3,4 +3,4 @@ font:
     family: JetBrainsMono Nerd Font Mono
     style: Regular
 env:
-  TERM: screen-256color
+  TERM: xterm-256color
