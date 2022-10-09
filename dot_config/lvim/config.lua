@@ -224,10 +224,11 @@ lvim.plugins = {
   {
     'akinsho/flutter-tools.nvim',
     config = function()
-      require("flutter-tools").setup{}
+      require("flutter-tools").setup {}
     end,
     requires = 'nvim-lua/plenary.nvim',
-  }
+  },
+  { 'dart-lang/dart-vim-plugin' }
   -- {
   --   "windwp/nvim-ts-autotag",
   --   config = function()
