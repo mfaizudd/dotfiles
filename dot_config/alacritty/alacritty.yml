@@ -2,5 +2,9 @@ font:
   normal:
     family: JetBrainsMono Nerd Font Mono
     style: Regular
+window:
+  dimensions:
+    columns: 87
+    lines: 25
 env:
   TERM: xterm-256color
