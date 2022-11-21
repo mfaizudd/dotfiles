@@ -122,6 +122,9 @@ then
     . $UTILS_FOLDER/z.sh
 fi
 
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.local/bin
 if [ -x "$(command -v yarn)" ]; then
