@@ -1,0 +1,13 @@
+[Desktop Action open-in-code]
+Exec=/usr/bin/code %U
+Name=Open in Code
+Icon=com.visualstudio.code
+
+[Desktop Entry]
+Actions=open-in-code;
+
+MimeType=inode/directory;
+
+ServiceTypes=KonqPopupMenu/Plugin
+Type=Service
+X-KDE-Priority=TopLevel
