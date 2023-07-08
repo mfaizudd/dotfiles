@@ -13,4 +13,9 @@ abbr -a scd systemctl disable
 abbr -a lg lazygit
 abbr -a ls "exa -la"
 bind \cw backward-kill-word
-zoxide init fish | source
+if type -q direnv
+    direnv hook fish | source
+end
+if type -q zoxide
+    zoxide init fish | source
+end
