@@ -5,6 +5,10 @@ if status is-interactive
     source ~/.asdf/asdf.fish
     exec tmux
 end
+
+# Environment variables
+set -Ux EDITOR nvim
+
 # Paths
 fish_add_path ~/.dotnet/tools
 fish_add_path ~/.cargo/bin
