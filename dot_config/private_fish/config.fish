@@ -27,5 +27,9 @@ abbr -a ls "exa -la"
 bind \cw backward-kill-word
 
 # Hooks
-zoxide init fish | source
-direnv hook fish | source
+if type -q zoxide
+    zoxide init fish | source
+end
+if type -q direnv
+    direnv hook fish | source
+end
