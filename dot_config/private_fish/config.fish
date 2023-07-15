@@ -33,3 +33,6 @@ end
 if type -q direnv
     direnv hook fish | source
 end
+if type -q sqlx
+    sqlx completions fish | source
+end
