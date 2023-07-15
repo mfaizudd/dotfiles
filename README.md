@@ -1,8 +1,7 @@
 # mfaizudd's dotfiles
 
 ## Prerequisites
- - Install zsh
- - Install [oh-my-zsh](https://ohmyz.sh)
+ - Install fish
  - Install [chezmoi](https://chezmoi.io)
 ```sh
 snap install chezmoi --classic
