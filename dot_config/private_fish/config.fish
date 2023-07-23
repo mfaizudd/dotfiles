@@ -12,6 +12,7 @@ set -Ux EDITOR nvim
 fish_add_path ~/.dotnet/tools
 fish_add_path ~/.cargo/bin
 fish_add_path ~/.local/bin
+fish_add_path ~/go/bin
 
 # Abbreviations
 abbr -a sc systemctl
@@ -21,6 +22,7 @@ abbr -a sce systemctl enable
 abbr -a scd systemctl disable
 abbr -a lg lazygit
 abbr -a ls "exa -la"
+abbr -a sd "cd ~ && cd (find * -type d | fzf)"
 
 # Configurations
 bind \cw backward-kill-word
