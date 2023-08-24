@@ -21,7 +21,9 @@ abbr -a scr systemctl restart
 abbr -a sce systemctl enable
 abbr -a scd systemctl disable
 abbr -a lg lazygit
-abbr -a ls "exa -la"
+if type -q exa
+    abbr -a ls "exa -la"
+end
 abbr -a sd "cd ~ && cd (find * -type d | fzf)"
 
 # Configurations
