@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     and not set -q TMUX
     source ~/.asdf/asdf.fish
-    exec tmux
+    # exec tmux
 end
 
 # Environment variables
@@ -21,6 +21,7 @@ abbr -a scr systemctl restart
 abbr -a sce systemctl enable
 abbr -a scd systemctl disable
 abbr -a lg lazygit
+abbr -a dc docker compose
 if type -q exa
     abbr -a ls "exa -la"
 end
