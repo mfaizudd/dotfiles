@@ -1,6 +1,9 @@
 [env]
 TERM = "xterm-256color"
 
+[font]
+size = 8
+
 [font.normal]
 family = "JetBrainsMonoNL Nerd Font Mono"
 style = "Regular"
