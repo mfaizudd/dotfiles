@@ -85,7 +85,7 @@
         "format": "{icon}",
         "format-alt": "{ipaddr}/{cidr} {icon}",
         "format-alt-click": "click-right",
-        "format-wifi": "{icon} ({signalStrength}%)",
+        "format-wifi": "{icon} ({signalStrength}% |  {bandwidthDownBits})",
         "format-icons": {
             "wifi": ["󰤟", "󰤢" ,"󰤨"],
             "ethernet": [""],
