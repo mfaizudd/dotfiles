@@ -35,6 +35,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/shelter-from-the-rain.jpg
 exec --no-startup-id picom
+exec --no-startup-id greenclip daemon
 exec_always autotiling -w 1 3 5 7 9
 
 # Use pactl to adjust volume in PulseAudio.
@@ -64,6 +65,7 @@ bindsym $mod+q kill
 #bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym Mod1+space exec --no-startup-id rofi -show drun
+bindsym $mod+v exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
