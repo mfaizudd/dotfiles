@@ -6,11 +6,10 @@
 }
 
 #waybar {
-    margin-top: 14px;
+    margin-top: 20px;
     padding: 20px;
-    background: rgba(198, 235, 52, 0.1);
+    background: rgba(22, 43, 59, 255);
     border-radius: 12px;
-    border: 2px solid #595959;
 }
 
 #workspaces {
@@ -72,11 +71,27 @@
     padding: 0 2px;
     border-radius: 20px;
     min-width: 10px;
-    background-color: transparent;
 }
 
 #clock {
     margin: 4px 2px;
+    color: rgb(255, 216, 110);
+}
+
+#battery, #network {
+    color: rgb(66, 245, 173);
+}
+
+#backlight, #idle_inhibitor, #pulseaudio {
+    color: rgb(66, 233, 245);
+}
+
+#cpu {
+    color: rgb(245, 66, 114);
+}
+
+#disk, #memory {
+    color: rgb(245, 66, 206)
 }
 
 #mpd * {
@@ -88,7 +103,7 @@
 #custom-power {
     margin: 4px 5px 4px 1px;
     padding: 0 6px;
-    background-color: #722F37;
+    background-color: rgb(62, 171, 222);
     border-radius: 10px;
     min-width: 15px;
 }
@@ -103,7 +118,7 @@
 #custom-launcher {
     margin: 4px 1px 4px 5px;
     padding: 0 6px;
-    background-color: #722F37;
+    background-color: rgb(62, 171, 222);
     border-radius: 10px;
     min-width: 15px;
 }

@@ -3,7 +3,7 @@
     "position": "top",
     "height": 10,
     "width": 1350,
-    "margin": "3, 0, -10, 0",
+    "margin": "6, 0, -10, 0",
     "modules-left": ["custom/launcher", "hyprland/workspaces", "cpu", "memory", "disk", "custom/recorder", "custom/audiorec"],
     "modules-center": ["mpd"],
     "modules-right": ["tray", "backlight", "idle_inhibitor", "pulseaudio", "network", "battery", "clock", "custom/power"],
@@ -26,7 +26,7 @@
     },
 
     "custom/launcher": {
-        "format":"⋏",
+        "format":"󰣇",
         "on-click": "exec wofi -c ~/.config/wofi/config -I",
         "tooltip": false,
     },
@@ -66,9 +66,9 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}   {capacity}%",
-        "format-charging": "⚡ {capacity}%",
-        "format-plugged": "  {capacity}%",
+        "format": "{icon} {capacity}%",
+        "format-charging": "⚡{capacity}%",
+        "format-plugged": " {capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
@@ -77,8 +77,8 @@
 
     "temperature": {
         "critical-threshold": 80,
-	"format-critical": "{temperatureC}° ",
-	"format": "{temperatureC}° "
+        "format-critical": "{temperatureC}° ",
+        "format": "{temperatureC}° "
     },
 
     "network": {
