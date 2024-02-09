@@ -4,7 +4,7 @@
     "height": 10,
     "width": 1350,
     "margin": "6, 0, -10, 0",
-    "modules-left": ["custom/launcher", "hyprland/workspaces", "cpu", "memory", "disk", "custom/recorder", "custom/audiorec"],
+    "modules-left": ["custom/launcher", "hyprland/workspaces", "cpu", "memory", "disk", "custom/recorder", "custom/audiorec", "custom/spotify"],
     "modules-center": ["mpd"],
     "modules-right": ["tray", "backlight", "idle_inhibitor", "pulseaudio", "network", "battery", "clock", "custom/power"],
 
@@ -23,6 +23,15 @@
             "focused": "",
             "default": ""
         }
+    },
+
+    "custom/spotify": {
+        "exec": "/usr/bin/python3 ~/.config/scripts/mediaplayer.py --player spotify",
+        "format": "{} ",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
     },
 
     "custom/launcher": {
