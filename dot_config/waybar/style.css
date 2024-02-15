@@ -1,6 +1,6 @@
 * {
     transition: none;
-    font-family: JetBrainsMono;
+    font-family: Inter;
     font-size: 14.5px;
     color: #ffffff;
 }
@@ -102,7 +102,7 @@
 
 #custom-power {
     margin: 4px 5px 4px 1px;
-    padding: 0 6px;
+    padding: 0 8px 0 4px;
     background-color: rgb(62, 171, 222);
     border-radius: 10px;
     min-width: 15px;
