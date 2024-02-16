@@ -48,7 +48,7 @@
     "clock": {
         "interval": 1,
         "locale": "C", 
-        "format": " {:%a,%b %d 󰥔  %I:%M %p}",
+        "format": " {:%a, %b %d 󰥔  %I:%M %p}",
         "format-alt": "{:%I:%M %p}" // Icon: calendar-alt
     },
 
@@ -75,7 +75,7 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon} {capacity}%",
+        "format": "{icon}   {capacity}%",
         "format-charging": "⚡{capacity}%",
         "format-plugged": "  {capacity}%",
         // "format-good": "", // An empty format will hide the module
