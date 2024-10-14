@@ -1,8 +1,8 @@
 [global]
 monitor = 0
 follow = mouse
-origin = top-right offset = 20x73
-offset = 20x73
+origin = top-right
+offset = 20x20
 geometry = "280x50-20+200"
 indicate_hidden = no
 shrink = no

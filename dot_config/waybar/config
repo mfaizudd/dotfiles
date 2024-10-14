@@ -2,9 +2,9 @@
     "layer": "top",
     "position": "top",
     "height": 10,
-    "width": 1350,
+    "width": 1550,
     "margin": "6, 0, -10, 0",
-    "modules-left": ["custom/launcher", "hyprland/workspaces", "cpu", "memory", "disk", "custom/recorder", "custom/audiorec", "custom/spotify"],
+    "modules-left": ["custom/launcher", "hyprland/workspaces", "cpu", "memory", "disk", "custom/recorder", "custom/audiorec", "custom/playerctl#play"],
     "modules-center": ["mpd"],
     "modules-right": ["tray", "backlight", "idle_inhibitor", "pulseaudio", "network", "battery", "clock", "custom/power"],
 
@@ -25,17 +25,22 @@
         }
     },
 
-    "custom/spotify": {
-        "exec": "/usr/bin/python3 ~/.config/scripts/mediaplayer.py --player spotify",
-        "format": "{} ",
+    "custom/playerctl#play": {
+        "format": "{icon} {}",
         "return-type": "json",
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
         "on-click": "playerctl play-pause",
-        "on-scroll-up": "playerctl next",
-        "on-scroll-down": "playerctl previous"
+        "on-scroll-up": "playerctl volume .05+",
+        "on-scroll-down": "playerctl volume .05-",
+        "format-icons": {
+          "Playing" : "<span>󰏥 </span>",
+          "Paused" : "<span> </span>",
+          "Stopped" : "<span> </span>"
+        }
     },
 
     "custom/launcher": {
-        "format":"󰣇",
+        "format":"",
         "on-click": "exec wofi -c ~/.config/wofi/config -I",
         "tooltip": false,
     },
@@ -48,7 +53,7 @@
     "clock": {
         "interval": 1,
         "locale": "C", 
-        "format": " {:%a, %b %d 󰥔  %I:%M %p}",
+        "format": "  {:%a, %b %d 󰥔  %I:%M %p}",
         "format-alt": "{:%I:%M %p}" // Icon: calendar-alt
     },
 
@@ -97,8 +102,8 @@
         "format-wifi": "{icon} ({signalStrength}% |  {bandwidthDownBits})",
         "format-icons": {
             "wifi": ["󰤟", "󰤢" ,"󰤨"],
-            "ethernet": [""],
-            "disconnected": [""]
+            "ethernet": ["󰈀"],
+            "disconnected": ["󰅛"]
         },
         "on-click": "kitty nmtui",
         "tooltip-format": "{ifname}: {ipaddr}",
@@ -145,7 +150,7 @@
     },
 
     "disk": {
-        "format": " {free}" 
+        "format": "  {free}" 
     },
 
     "custom/recorder": {

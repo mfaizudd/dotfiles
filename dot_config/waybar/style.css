@@ -117,7 +117,7 @@
 
 #custom-launcher {
     margin: 4px 1px 4px 5px;
-    padding: 0 8px 0 4px;
+    padding: 0 8px 0 1px;
     background-color: rgb(62, 171, 222);
     border-radius: 10px;
     min-width: 15px;
