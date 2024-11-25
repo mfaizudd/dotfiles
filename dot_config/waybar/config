@@ -28,6 +28,7 @@
     "custom/playerctl#play": {
         "format": "{icon} {}",
         "return-type": "json",
+        "max-length": 60,
         "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
         "on-click": "playerctl play-pause",
         "on-scroll-up": "playerctl volume .05+",
@@ -54,7 +55,8 @@
         "interval": 1,
         "locale": "C", 
         "format": "  {:%a, %b %d 󰥔  %I:%M %p}",
-        "format-alt": "{:%I:%M %p}" // Icon: calendar-alt
+        "format-alt": "{:%I:%M %p}", // Icon: calendar-alt
+        "tooltip": false
     },
 
     "cpu": {
