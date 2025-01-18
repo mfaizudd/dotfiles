@@ -46,7 +46,6 @@
 
 #tray * {
     padding: 4px 10px;
-    border-left: 1px solid black;
     transition: all 0.2s;
 }
 
@@ -55,7 +54,6 @@
 }
 
 #tray *:first-child {
-    border-left: none;
     border-radius: 12px 0 0 12px;
 }
 
