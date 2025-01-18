@@ -2,7 +2,7 @@
 monitor = 0
 follow = mouse
 origin = top-right
-offset = 20x20
+offset = 26x26
 geometry = "280x50-20+200"
 indicate_hidden = no
 shrink = no
@@ -56,4 +56,4 @@ frame_color = "#333333"
 timeout = 0
 background = "#00000099"
 foreground = "#EEAA00"
-frame_color = "#EEAA00"
+frame_color = "#AA6600"
