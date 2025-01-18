@@ -44,20 +44,23 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-#tray * {
+#tray>*>* {
     padding: 4px 10px;
+}
+
+#tray>* {
     transition: all 0.2s;
 }
 
-#tray *:hover {
+#tray>*:hover {
     background-color: rgba(80, 80, 80, 0.4);
 }
 
-#tray *:first-child {
+#tray>*:first-child {
     border-radius: 12px 0 0 12px;
 }
 
-#tray *:last-child {
+#tray>*:last-child {
     border-radius: 0 12px 12px 0;
 }
 
@@ -83,6 +86,7 @@
     margin: 4px;
     padding: 4px 12px;
     background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.2s;
     /* color: rgb(255, 216, 110); */
 }
 
