@@ -22,7 +22,7 @@
 }
 
 #workspaces button.visible {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(120, 120, 120, 0.4);
 }
 
 #workspaces button.focused {
