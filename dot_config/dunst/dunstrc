@@ -6,14 +6,14 @@ offset = 20x20
 geometry = "280x50-20+200"
 indicate_hidden = no
 shrink = no
-separator_height = 4
+separator_height = 1
 separator_color = yes
 padding = 20
 horizontal_padding = 20
-frame_width = 2
+frame_width = 1
 sort = no
 idle_threshold = 120
-font = Torus 13
+font = Inter 13
 line_height = 4
 markup = full
 format = "<b>%s</b>\n%b"
@@ -42,18 +42,18 @@ context = ctrl+shift+period
 
 [urgency_low]
 timeout = 4
-background = "#282828"
-foreground = "#EBDBB2"
-frame_color = "#B3925F"
+background = "#00000099"
+foreground = "#FFFFFF"
+frame_color = "#333333"
 
 [urgency_normal]
 timeout = 8
-background = "#282828"
-foreground = "#EBDBB2"
-frame_color = "#B3925F"
+background = "#00000099"
+foreground = "#FFFFFF"
+frame_color = "#333333"
 
 [urgency_critical]
 timeout = 0
-background = "#1D2021"
+background = "#00000099"
 foreground = "#EEAA00"
 frame_color = "#EEAA00"
