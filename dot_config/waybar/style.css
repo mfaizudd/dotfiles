@@ -6,10 +6,8 @@
 }
 
 #waybar {
-    margin-top: 20px;
     padding: 20px;
-    background: rgba(22, 43, 59, 255);
-    border-radius: 12px;
+    background: rgba(0, 0, 0, 0);
 }
 
 #workspaces {
@@ -41,18 +39,28 @@
 }
 
 #tray {
-    margin: 3px 2px;
+    margin: 2px 2px;
     border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
 #tray * {
-    padding: 0 6px;
+    padding: 4px 10px;
     border-left: 1px solid black;
+    transition: all 0.2s;
+}
+
+#tray *:hover {
+    background-color: rgba(80, 80, 80, 0.4);
 }
 
 #tray *:first-child {
     border-left: none;
+    border-radius: 12px 0 0 12px;
+}
+
+#tray *:last-child {
+    border-radius: 0 12px 12px 0;
 }
 
 #mode,
@@ -74,24 +82,26 @@
 }
 
 #clock {
-    margin: 4px 2px;
-    color: rgb(255, 216, 110);
+    margin: 4px;
+    padding: 4px 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* color: rgb(255, 216, 110); */
 }
 
 #battery, #network {
-    color: rgb(66, 245, 173);
+    /* color: rgb(66, 245, 173); */
 }
 
 #backlight, #idle_inhibitor, #pulseaudio {
-    color: rgb(66, 233, 245);
+    /* color: rgb(66, 233, 245); */
 }
 
 #cpu {
-    color: rgb(245, 66, 114);
+    /* color: rgb(245, 66, 114); */
 }
 
 #disk, #memory {
-    color: rgb(245, 66, 206)
+    /* color: rgb(245, 66, 206) */
 }
 
 #mpd * {
@@ -102,10 +112,27 @@
 
 #custom-power {
     margin: 4px 5px 4px 1px;
-    padding: 0 8px 0 4px;
-    background-color: rgb(62, 171, 222);
+    padding: 0 10px 0 5px;
+    background-color: rgba(0, 0, 0, 255);
     border-radius: 10px;
     min-width: 15px;
+    transition: all 0.2s;
+}
+
+#custom-power:hover {
+    background-color: rgba(80, 80, 80, 0.4);
+}
+
+#custom-playerctl {
+    padding: 4px 12px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.2s;
+}
+
+#custom-playerctl:hover {
+    background-color: rgba(80, 80, 80, 0.4);
 }
 
 #custom-recorder,
@@ -117,10 +144,15 @@
 
 #custom-launcher {
     margin: 4px 1px 4px 5px;
-    padding: 0 8px 0 1px;
-    background-color: rgb(62, 171, 222);
+    padding: 0 10px 0 2px;
+    background-color: rgba(0, 0, 0, 255);
     border-radius: 10px;
     min-width: 15px;
+    transition: all 0.2s;
+}
+
+#custom-launcher:hover {
+    background-color: rgba(80, 80, 80, 0.4);
 }
 
 #temperature.critical {

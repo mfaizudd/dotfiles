@@ -2,9 +2,9 @@
     "layer": "top",
     "position": "top",
     "height": 10,
-    "width": 1550,
-    "margin": "6, 0, -10, 0",
-    "modules-left": ["custom/launcher", "hyprland/workspaces", "cpu", "memory", "disk", "custom/recorder", "custom/audiorec", "custom/playerctl#play"],
+    "spacing": 10,
+    "margin": "0, 0, -10, 0",
+    "modules-left": ["custom/launcher", "hyprland/workspaces", "cpu", "memory", "disk", "custom/recorder", "custom/audiorec", "custom/playerctl"],
     "modules-center": ["mpd"],
     "modules-right": ["tray", "backlight", "idle_inhibitor", "pulseaudio", "network", "battery", "clock", "custom/power"],
 
@@ -25,8 +25,8 @@
         }
     },
 
-    "custom/playerctl#play": {
-        "format": "{icon} {}",
+    "custom/playerctl": {
+        "format": "{icon}  {}",
         "return-type": "json",
         "max-length": 60,
         "exec": "playerctl -p 'spotify,*' metadata --format '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
@@ -101,7 +101,7 @@
         "format": "{icon}",
         "format-alt": "{ipaddr}/{cidr} {icon}",
         "format-alt-click": "click-right",
-        "format-wifi": "{icon} ({signalStrength}% |  {bandwidthDownBits})",
+        "format-wifi": "{icon}   ({signalStrength}% |  {bandwidthDownBits})",
         "format-icons": {
             "wifi": ["󰤟", "󰤢" ,"󰤨"],
             "ethernet": ["󰈀"],
@@ -113,7 +113,7 @@
 
     "pulseaudio": {
       // "scroll-step": 1, // %, can be a float
-      "format": "{icon} {volume}% {format_source}",
+      "format": "{icon}  {volume}% {format_source}",
       "format-bluetooth": "{icon} {volume}% {format_source}",
       "format-bluetooth-muted": " {format_source}",
       "format-muted": "  {format_source}",
