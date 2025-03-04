@@ -6,22 +6,24 @@
     "margin": "0, 0, -10, 0",
     "modules-left": ["custom/launcher", "hyprland/workspaces", "cava", "custom/recorder", "custom/audiorec", "custom/playerctl"],
     "modules-center": ["mpd"],
-    "modules-right": ["tray", "backlight", "idle_inhibitor", "pulseaudio", "network", "battery", "clock", "custom/power"],
+    "modules-right": ["tray", "disk", "pulseaudio", "network", "battery", "clock", "custom/power"],
 
-    "sway/workspaces": {
-        "format": "{icon}",
+    "hyprland/workspaces": {
+        "format": "{name}",
         "format-icons": {
-            "1": "♠",
-            "2": "♥",
-            "3": "♦",
-            "4": "♣",
-            "5": "₿",
-            "6": "⟠",
-            "7": "₮",
-            "8": "Ð",
-            "urgent": "",
-            "focused": "",
-            "default": ""
+            "1": "󰈹",
+            "2": "󰓇",
+            "3": "󰓓",
+            "5": "󰆍",
+            "urgent": "󰈅",
+            "focused": "󰄯",
+            "default": "󰜋"
+        },
+        "window-rewrite-default": "󰄯",
+        "window-rewrite": {
+            "class<firefox>": "󰈹",
+            "class<alacritty>": "󰆍",
+            "class<spotify>": "󰓇"
         }
     },
 
@@ -98,24 +100,24 @@
     },
 
     "network": {
-        "format": "{icon}",
+        "format": "{icon}  {bandwidthDownBits}",
         "format-alt": "{ipaddr}/{cidr} {icon}",
         "format-alt-click": "click-right",
-        "format-wifi": "{icon}   ({signalStrength}% |  {bandwidthDownBits})",
+        "format-wifi": "{icon}  {bandwidthDownBits}",
         "format-icons": {
             "wifi": ["󰤟", "󰤢" ,"󰤨"],
             "ethernet": ["󰈀"],
             "disconnected": ["󰅛"]
         },
-        "on-click": "kitty nmtui",
+        "on-click": "alacritty -e nmtui",
         "tooltip-format": "{ifname}: {ipaddr}",
     },
 
     "pulseaudio": {
       // "scroll-step": 1, // %, can be a float
-      "format": "{icon}  {volume}% {format_source}",
-      "format-bluetooth": "{icon} {volume}% {format_source}",
-      "format-bluetooth-muted": " {format_source}",
+      "format": "{icon}  {volume}%",
+      "format-bluetooth": "{icon} {volume}%",
+      "format-bluetooth-muted": " ",
       "format-muted": "  {format_source}",
       "format-source": " {volume}%",
       "format-source-muted": "",
@@ -133,7 +135,7 @@
 
     "backlight": {
         "device": "intel_backlight",
-        "format": "{icon} {percent}%",
+        "format": "{icon}  {percent}%",
         "format-icons": ["☀️", ""],
         "on-scroll-down": "brightnessctl -c backlight set 1%-",
         "on-scroll-up": "brightnessctl -c backlight set +1%"

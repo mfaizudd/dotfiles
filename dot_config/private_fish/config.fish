@@ -43,3 +43,6 @@ end
 if type -q sqlx
     sqlx completions fish | source
 end
+if type -q thefuck
+    thefuck --alias | source
+end
