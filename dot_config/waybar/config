@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 10,
+    "height": 36,
     "spacing": 10,
     "margin": "0, 0, -10, 0",
     "modules-left": ["custom/launcher", "hyprland/workspaces", "cava", "custom/recorder", "custom/audiorec", "custom/playerctl"],
@@ -109,7 +109,6 @@
             "ethernet": ["󰈀"],
             "disconnected": ["󰅛"]
         },
-        "on-click": "alacritty -e nmtui",
         "tooltip-format": "{ifname}: {ipaddr}",
     },
 
