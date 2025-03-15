@@ -28,7 +28,7 @@
     },
 
     "custom/playerctl": {
-        "format": "{icon}  {}",
+        "format": "{icon}  {text}",
         "return-type": "json",
         "max-length": 60,
         "exec": "playerctl -p 'spotify,*' metadata --format '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
