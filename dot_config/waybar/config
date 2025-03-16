@@ -6,7 +6,7 @@
     "margin": "0, 0, -10, 0",
     "modules-left": ["custom/launcher", "hyprland/workspaces", "cava", "custom/recorder", "custom/audiorec", "custom/playerctl"],
     "modules-center": ["mpd"],
-    "modules-right": ["tray", "disk", "pulseaudio", "network", "battery", "clock", "custom/power"],
+    "modules-right": ["tray", "idle_inhibitor", "disk", "pulseaudio", "network", "battery", "clock", "custom/power"],
 
     "hyprland/workspaces": {
         "format": "{name}",
