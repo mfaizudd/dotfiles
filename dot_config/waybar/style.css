@@ -115,7 +115,7 @@
 #custom-power {
     margin: 4px 5px 4px 1px;
     padding: 0 10px 0 5px;
-    background-color: rgba(0, 0, 0, 255);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     min-width: 15px;
     transition: all 0.2s;
@@ -141,13 +141,14 @@
 #custom-audiorec {
     margin: 4px 2px;
     padding: 0 6px;
+    border-radius: 12px;
     background-color: rgba(175, 65, 84, 0.8);
 }
 
 #custom-launcher {
     margin: 4px 1px 4px 5px;
     padding: 0 10px 0 2px;
-    background-color: rgba(0, 0, 0, 255);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     min-width: 15px;
     transition: all 0.2s;
