@@ -9,7 +9,7 @@ family = "Iosevka Nerd Font"
 style = "Regular"
 
 [window]
-opacity = 0.75
+opacity = 0.80
 
 [window.dimensions]
 columns = 87
