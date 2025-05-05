@@ -56,8 +56,8 @@
     "clock": {
         "interval": 1,
         "locale": "C", 
-        "format": "  {:%a, %b %d 󰥔  %I:%M %p}",
-        "format-alt": "{:%I:%M %p}", // Icon: calendar-alt
+        "format": "  {:%a, %b %d 󰥔  %H:%M}",
+        "format-alt": "{:%H:%M}", // Icon: calendar-alt
         "tooltip": false
     },
 
