@@ -44,7 +44,7 @@
 
     "custom/launcher": {
         "format":"",
-        "on-click": "exec wofi -c ~/.config/wofi/config -I",
+        "on-click": "rofi -show drun -i",
         "tooltip": false,
     },
 
