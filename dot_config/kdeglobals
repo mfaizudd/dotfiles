@@ -136,8 +136,12 @@ ForegroundVisited=155,89,182
 ColorSchemeHash=2c3f86428c11011a7c64ee1e7f47c274d498ff10
 TerminalApplication=foot
 
+[Icons]
+Theme=Papirus-Dark
+
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
+widgetStyle=Breeze
 
 [WM]
 activeBackground=39,44,49

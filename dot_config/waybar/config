@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 36,
+    "height": 39,
     "spacing": 10,
     "margin": "0, 0, -10, 0",
     "modules-left": ["custom/launcher", "hyprland/workspaces", "cava", "custom/recorder", "custom/audiorec", "custom/playerctl"],
@@ -31,10 +31,10 @@
         "format": "{icon}  {text}",
         "return-type": "json",
         "max-length": 60,
-        "exec": "playerctl metadata --format '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-        "on-click": "playerctl play-pause",
-        "on-scroll-up": "playerctl volume .05+",
-        "on-scroll-down": "playerctl volume .05-",
+        "exec": "playerctl -p spotify metadata --format '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "on-click": "playerctl -p spotify play-pause",
+        "on-scroll-up": "playerctl -p spotify volume .05+",
+        "on-scroll-down": "playerctl -p spotify volume .05-",
         "format-icons": {
           "Playing" : "<span>󰏥 </span>",
           "Paused" : "<span> </span>",
