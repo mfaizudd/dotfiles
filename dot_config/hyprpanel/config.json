@@ -74,5 +74,7 @@
   "menus.dashboard.shortcuts.left.shortcut1.icon": "󰈹",
   "menus.dashboard.shortcuts.left.shortcut1.command": "flatpak run app.zen_browser.zen",
   "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Zen Browser",
-  "menus.media.displayTime": true
+  "menus.media.displayTime": true,
+  "theme.bar.menus.popover.text": "#ffffff",
+  "theme.bar.menus.opacity": 60
 }
