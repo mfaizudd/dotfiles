@@ -19,8 +19,7 @@
         "network",
         "bluetooth",
         "systray",
-        "clock",
-        "notifications"
+        "clock"
       ]
     },
     "1": {
@@ -35,8 +34,7 @@
       ],
       "right": [
         "volume",
-        "clock",
-        "notifications"
+        "clock"
       ]
     },
     "2": {
@@ -51,8 +49,7 @@
       ],
       "right": [
         "volume",
-        "clock",
-        "notifications"
+        "clock"
       ]
     }
   },
@@ -76,5 +73,6 @@
   "menus.dashboard.stats.enable_gpu": false,
   "menus.dashboard.shortcuts.left.shortcut1.icon": "󰈹",
   "menus.dashboard.shortcuts.left.shortcut1.command": "flatpak run app.zen_browser.zen",
-  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Zen Browser"
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Zen Browser",
+  "menus.media.displayTime": true
 }
