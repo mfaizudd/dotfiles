@@ -1,0 +1,80 @@
+{
+  "bar.customModules.storage.paths": [
+    "/"
+  ],
+  "theme.bar.buttons.modules.cava.enableBorder": false,
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle",
+        "cava"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "network",
+        "bluetooth",
+        "systray",
+        "clock",
+        "notifications"
+      ]
+    },
+    "1": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle",
+        "cava"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    },
+    "2": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle",
+        "cava"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "theme.bar.menus.monochrome": false,
+  "wallpaper.image": "/home/bandeng/Sync/Pictures/Wallpapers/quirrel.gif",
+  "wallpaper.enable": false,
+  "theme.matugen": false,
+  "theme.matugen_settings.mode": "dark",
+  "theme.matugen_settings.scheme_type": "content",
+  "theme.bar.opacity": 60,
+  "theme.bar.buttons.opacity": 60,
+  "theme.osd.opacity": 60,
+  "theme.bar.scaling": 75,
+  "theme.bar.buttons.separator.margins": "0.15em",
+  "theme.bar.margin_bottom": "0em",
+  "theme.bar.floating": false,
+  "theme.bar.shadowMargins": "0px 0px 4px 0px",
+  "theme.bar.menus.menu.clock.scaling": 70,
+  "menus.media.hideAuthor": false,
+  "menus.dashboard.powermenu.avatar.image": "/home/bandeng/Sync/Pictures/goober-tiger.jpg",
+  "menus.dashboard.stats.enable_gpu": false,
+  "menus.dashboard.shortcuts.left.shortcut1.icon": "󰈹",
+  "menus.dashboard.shortcuts.left.shortcut1.command": "flatpak run app.zen_browser.zen",
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Zen Browser"
+}
