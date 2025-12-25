@@ -50,8 +50,7 @@
 
     "sway/window": {
         "max-length": 25,
-        "tooltip": false,
-        "icon": false
+        "tooltip": false
     },
 
     "clock": {

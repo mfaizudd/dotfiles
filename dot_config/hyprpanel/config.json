@@ -19,6 +19,7 @@
         "network",
         "bluetooth",
         "systray",
+        "battery",
         "clock"
       ]
     },
@@ -34,6 +35,7 @@
       ],
       "right": [
         "volume",
+        "battery",
         "clock"
       ]
     },
@@ -67,7 +69,7 @@
   "theme.bar.margin_bottom": "0em",
   "theme.bar.floating": false,
   "theme.bar.shadowMargins": "0px 0px 4px 0px",
-  "theme.bar.menus.menu.clock.scaling": 70,
+  "theme.bar.menus.menu.clock.scaling": 75,
   "menus.media.hideAuthor": false,
   "menus.dashboard.powermenu.avatar.image": "/home/bandeng/Sync/Pictures/goober-tiger.jpg",
   "menus.dashboard.stats.enable_gpu": false,
@@ -76,5 +78,17 @@
   "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Zen Browser",
   "menus.media.displayTime": true,
   "theme.bar.menus.popover.text": "#ffffff",
-  "theme.bar.menus.opacity": 60
+  "theme.bar.menus.opacity": 60,
+  "theme.bar.menus.text": "#ffffff",
+  "theme.bar.transparent": true,
+  "theme.bar.background": "#11111b",
+  "theme.osd.scaling": 75,
+  "scalingPriority": "gdk",
+  "theme.bar.menus.menu.dashboard.scaling": 75,
+  "theme.bar.menus.menu.dashboard.confirmation_scaling": 75,
+  "theme.bar.menus.menu.media.scaling": 75,
+  "theme.bar.menus.menu.volume.scaling": 75,
+  "theme.bar.menus.menu.network.scaling": 75,
+  "theme.bar.menus.menu.battery.scaling": 75,
+  "theme.bar.menus.menu.bluetooth.scaling": 75
 }
