@@ -19,7 +19,6 @@
         "network",
         "bluetooth",
         "systray",
-        "battery",
         "clock"
       ]
     },
@@ -35,7 +34,6 @@
       ],
       "right": [
         "volume",
-        "battery",
         "clock"
       ]
     },
@@ -71,7 +69,7 @@
   "theme.bar.shadowMargins": "0px 0px 4px 0px",
   "theme.bar.menus.menu.clock.scaling": 75,
   "menus.media.hideAuthor": false,
-  "menus.dashboard.powermenu.avatar.image": "/home/bandeng/Sync/Pictures/goober-tiger.jpg",
+  "menus.dashboard.powermenu.avatar.image": "/home/bandeng/Sync/Pictures/Paintings/ensign_bandeng.png",
   "menus.dashboard.stats.enable_gpu": false,
   "menus.dashboard.shortcuts.left.shortcut1.icon": "󰈹",
   "menus.dashboard.shortcuts.left.shortcut1.command": "flatpak run app.zen_browser.zen",
@@ -90,5 +88,6 @@
   "theme.bar.menus.menu.volume.scaling": 75,
   "theme.bar.menus.menu.network.scaling": 75,
   "theme.bar.menus.menu.battery.scaling": 75,
-  "theme.bar.menus.menu.bluetooth.scaling": 75
+  "theme.bar.menus.menu.bluetooth.scaling": 75,
+  "bar.media.truncation_size": 70
 }
