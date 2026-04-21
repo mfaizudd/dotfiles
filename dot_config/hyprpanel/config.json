@@ -55,7 +55,7 @@
   },
   "theme.bar.menus.monochrome": true,
   "wallpaper.image": "/home/bandeng/Sync/Pictures/Wallpapers/quirrel.gif",
-  "wallpaper.enable": false,
+  "wallpaper.enable": true,
   "theme.matugen": false,
   "theme.matugen_settings.mode": "dark",
   "theme.matugen_settings.scheme_type": "content",
@@ -124,5 +124,16 @@
   "theme.bar.buttons.windowtitle.icon": "#ffffff",
   "theme.bar.buttons.modules.cava.text": "#ffffff",
   "theme.bar.buttons.modules.cava.icon": "#ffffff",
-  "theme.bar.buttons.modules.cava.background": "#000000"
+  "theme.bar.buttons.modules.cava.background": "#000000",
+  "theme.bar.buttons.workspaces.numbered_active_underline_color": "#ffffff",
+  "theme.bar.buttons.workspaces.active": "#ffffff",
+  "theme.bar.buttons.workspaces.hover": "#ffffff",
+  "theme.bar.buttons.workspaces.border": "#ffffff",
+  "theme.bar.buttons.workspaces.occupied": "#ffffff",
+  "theme.bar.menus.progressbar.foreground": "#ffffff",
+  "theme.bar.menus.iconbuttons.active": "#b4beff",
+  "theme.bar.menus.iconbuttons.passive": "#cdd6f3",
+  "theme.bar.menus.listitems.active": "#b4befd",
+  "theme.bar.menus.listitems.passive": "#cdd6f4",
+  "wallpaper.pywal": false
 }
