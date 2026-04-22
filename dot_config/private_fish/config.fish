@@ -14,6 +14,7 @@ fish_add_path ~/.local/bin
 fish_add_path ~/go/bin
 
 # Abbreviations
+abbr -a vim nvim
 abbr -a sc systemctl
 abbr -a scs systemctl status
 abbr -a scr systemctl restart
