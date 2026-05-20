@@ -15,6 +15,7 @@
         "media"
       ],
       "right": [
+        "battery",
         "volume",
         "network",
         "bluetooth",
@@ -34,6 +35,8 @@
       ],
       "right": [
         "volume",
+        "systray",
+        "battery",
         "clock"
       ]
     },
@@ -132,5 +135,7 @@
   "theme.bar.menus.iconbuttons.passive": "#cdd6f3",
   "theme.bar.menus.listitems.active": "#b4befd",
   "theme.bar.menus.listitems.passive": "#cdd6f4",
-  "wallpaper.pywal": false
+  "wallpaper.pywal": false,
+  "bar.workspaces.show_numbered": true,
+  "bar.media.truncation_size": 85
 }

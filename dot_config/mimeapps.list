@@ -7,12 +7,16 @@ application/x-extension-xht=firefox-developer-edition.desktop;
 application/x-extension-xhtml=firefox-developer-edition.desktop;
 application/xhtml+xml=firefox-developer-edition.desktop;
 application/xml=org.kde.kate.desktop;nvim.desktop;nvim-qt.desktop;
-image/heif=com.interversehq.qView.desktop;krita_heif.desktop;
+application/zip=org.kde.ark.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;org.kde.gwenview.desktop;org.kde.kate.desktop;nvim.desktop;com.interversehq.qView.desktop;krita_svg.desktop;com.github.flxzt.rnote.desktop;app.zen_browser.zen.desktop;org.onlyoffice.desktopeditors.desktop;dev.zed.Zed.desktop;org.kde.kwrite.desktop;vim.desktop;org.chromium.Chromium.desktop;
+inode/directory=org.kde.dolphin.desktop;org.kde.gwenview.desktop;nnn.desktop;xplr.desktop;org.kde.kate.desktop;qdirstat.desktop;
 text/html=firefox-developer-edition.desktop;
 video/mp4=vlc.desktop;mplayer.desktop;com.stremio.Stremio.desktop;
 x-scheme-handler/chrome=firefox-developer-edition.desktop;
 x-scheme-handler/http=firefox-developer-edition.desktop;
 x-scheme-handler/https=firefox-developer-edition.desktop;
+text/plain=dev.zed.Zed.desktop;
+text/csv=org.onlyoffice.desktopeditors.desktop;
 
 [Default Applications]
 application/json=nvim.desktop;
@@ -24,17 +28,20 @@ application/x-extension-xht=firefox-developer-edition.desktop
 application/x-extension-xhtml=firefox-developer-edition.desktop
 application/xhtml+xml=firefox-developer-edition.desktop
 application/xml=org.kde.kate.desktop;
+application/zip=org.kde.ark.desktop;
 image/apng=com.interversehq.qView.desktop;
 image/bmp=com.interversehq.qView.desktop;
 image/gif=com.interversehq.qView.desktop;
 image/heif=com.interversehq.qView.desktop;
 image/jpeg=com.interversehq.qView.desktop;
 image/png=com.interversehq.qView.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;
+inode/directory=org.kde.dolphin.desktop;
 text/css=nvim.desktop;
-text/csv=nvim.desktop;
+text/csv=org.onlyoffice.desktopeditors.desktop
 text/html=app.zen_browser.zen.desktop
 text/javascript=nvim.desktop;
-text/plain=nvim.desktop;
+text/plain=dev.zed.Zed.desktop
 video/mp4=vlc.desktop;
 video/x-matroska=mplayer.desktop
 x-scheme-handler/about=app.zen_browser.zen.desktop
@@ -42,3 +49,6 @@ x-scheme-handler/chrome=firefox-developer-edition.desktop
 x-scheme-handler/http=app.zen_browser.zen.desktop
 x-scheme-handler/https=app.zen_browser.zen.desktop
 x-scheme-handler/unknown=app.zen_browser.zen.desktop
+
+[Removed Associations]
+model/stl=blender.desktop;
