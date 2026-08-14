@@ -49,6 +49,16 @@ end
 if type -q starship
     starship init fish | source
 end
+if type -q yazi
+    function y
+        set tmp (mktemp -t "yazi-cwd.XXXXXX")
+        command yazi $argv --cwd-file="$tmp"
+        if read -z cwd < "$tmp"; and [ "$cwd" != "$PWD" ]; and test -d "$cwd"
+            builtin cd -- "$cwd"
+        end
+        command rm -f -- "$tmp"
+    end
+end
 
 # ASDF configuration code
 if test -z $ASDF_DATA_DIR
@@ -72,5 +82,7 @@ set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; se
 #   - the correct directories to the PATH
 #   - auto-completion for the opam binary
 # This section can be safely removed at any time if needed.
-test -r '/home/bandeng/.opam/opam-init/init.fish' && source '/home/bandeng/.opam/opam-init/init.fish' > /dev/null 2> /dev/null; or true
+if type -q opam
+    test -r '/home/bandeng/.opam/opam-init/init.fish' && source '/home/bandeng/.opam/opam-init/init.fish' > /dev/null 2> /dev/null; or true
+end
 # END opam configuration

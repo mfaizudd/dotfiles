@@ -1,6 +1,6 @@
 * {
     transition: none;
-    font-family: Inter;
+    font-family: Iosevka Nerd Font, Inter;
     font-size: 14.5px;
     color: #ffffff;
 }
@@ -18,7 +18,7 @@
 #workspaces button {
     margin: 3px 4px;
     padding: 0 4px;
-    transition: all 0.2s
+    transition: all 0.2s;
 }
 
 #workspaces button.visible {
@@ -109,7 +109,7 @@
 #mpd * {
     min-width: 10px;
     font-size: 11px;
-    font-family: JetBrainsMono;
+    font-family: Inter;
 }
 
 #custom-power {
@@ -131,6 +131,7 @@
     border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.4);
     transition: all 0.2s;
+    font-family: Noto Sans;
 }
 
 #custom-playerctl:hover {
