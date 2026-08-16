@@ -1,0 +1,4 @@
+binds {
+    Alt+space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Mod+Alt+P allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+}
