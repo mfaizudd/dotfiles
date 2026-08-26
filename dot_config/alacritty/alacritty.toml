@@ -14,3 +14,8 @@ opacity = 0.80
 [window.dimensions]
 columns = 87
 lines = 30
+
+[[keyboard.bindings]] # an llm made this
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"
