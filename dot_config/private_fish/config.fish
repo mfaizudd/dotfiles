@@ -24,6 +24,7 @@ abbr -a lg lazygit
 abbr -a gu gitui
 abbr -a dc docker compose
 abbr -a xd "cd (xplr)"
+abbr -a zri zellij run -i --
 if type -q exa
     abbr -a ls "exa -la"
 end
