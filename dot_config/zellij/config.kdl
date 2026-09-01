@@ -201,6 +201,8 @@ keybinds clear-defaults=true {
         bind "x" { CloseFocus; SwitchToMode "normal"; }
     }
     shared_among "scroll" "search" {
+        bind "g" { ScrollToTop; }
+        bind "Shift g" { ScrollToBottom; }
         bind "PageDown" { PageScrollDown; }
         bind "PageUp" { PageScrollUp; }
         bind "left" { PageScrollUp; }
@@ -263,7 +265,7 @@ keybinds clear-defaults=true {
 plugins {
     about location="zellij:about"
     compact-bar location="zellij:compact-bar" {
-        tooltip "F1"
+        // tooltip "F1"
     }
     configuration location="zellij:configuration"
     filepicker location="zellij:strider" {
