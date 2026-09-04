@@ -138,14 +138,6 @@ keybinds clear-defaults=true {
         }
     }
     shared {
-        bind "F1" {
-            MessagePlugin "compact-bar" {
-                name "toggle_tooltip"
-                payload "1"
-                floating false
-                tooltip "F1"
-            }
-        }
     }
     shared_except "locked" {
         bind "Alt +" { Resize "Increase"; }
@@ -264,9 +256,6 @@ keybinds clear-defaults=true {
 // changing these requires a restart to take effect
 plugins {
     about location="zellij:about"
-    compact-bar location="zellij:compact-bar" {
-        // tooltip "F1"
-    }
     configuration location="zellij:configuration"
     filepicker location="zellij:strider" {
         cwd "/"
