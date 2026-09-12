@@ -519,7 +519,7 @@ keybinds clear-defaults=true {
         bind "u" {
             HalfPageScrollUp
         }
-        bind "esc" {
+        bind "esc" "q" {
             ScrollToBottom
             SwitchToMode "normal"
         }
