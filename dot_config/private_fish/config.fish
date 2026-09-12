@@ -30,6 +30,7 @@ if type -q exa
 end
 abbr -a sd "cd ~ && cd (find * -type d | fzf)"
 abbr -a sd. "cd (if not find * -type d | fzf; echo .; end)"
+abbr -a nd nix develop --command fish
 
 # Configurations
 bind \cw backward-kill-word
