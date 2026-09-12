@@ -14,3 +14,9 @@ window-rule {
     match app-id="^spotify$"
     default-column-width { fixed 1550; }
 }
+
+// @id=dms-floating-windows @name=DMS Floating Windows
+window-rule {
+    match app-id="^com.danklinux.dms$"
+    open-floating true
+}
