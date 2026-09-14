@@ -50,6 +50,7 @@ x-scheme-handler/http=firefox.desktop
 x-scheme-handler/https=firefox.desktop
 x-scheme-handler/unknown=app.zen_browser.zen.desktop
 application/epub+zip=calibre-ebook-viewer.desktop
+audio/mp4=vlc.desktop
 
 [Added Associations]
 application/json=nvim.desktop;
@@ -92,6 +93,7 @@ x-scheme-handler/file=org.gnome.Nautilus.desktop;
 x-scheme-handler/http=firefox.desktop;firefox-developer-edition.desktop;
 x-scheme-handler/https=firefox.desktop;firefox-developer-edition.desktop;
 application/epub+zip=calibre-ebook-viewer.desktop;
+audio/mp4=vlc.desktop;
 
 [Removed Associations]
 model/stl=blender.desktop;
