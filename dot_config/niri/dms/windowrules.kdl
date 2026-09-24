@@ -20,3 +20,9 @@ window-rule {
     match app-id="^com.danklinux.dms$"
     open-floating true
 }
+
+// @id=wr_1790175292833017314 @name=it.mijorus.smile
+window-rule {
+    match app-id="^it.mijorus.smile$"
+    open-floating true
+}
