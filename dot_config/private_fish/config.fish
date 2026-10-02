@@ -21,6 +21,7 @@ abbr -a scr systemctl restart
 abbr -a sce systemctl enable
 abbr -a scd systemctl disable
 abbr -a lg lazygit
+abbr -a lj lazyjj
 abbr -a gu gitui
 abbr -a dc docker compose
 abbr -a xd "cd (xplr)"

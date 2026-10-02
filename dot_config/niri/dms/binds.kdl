@@ -1,6 +1,7 @@
 binds {
     Alt+space hotkey-overlay-title="Default Launcher: Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
     Ctrl+Alt+Delete hotkey-overlay-title="Power Menu: Toggle" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
+    Mod+I hotkey-overlay-title="Settings: Toggle" { spawn "dms" "ipc" "call" "settings" "toggle"; }
     Mod+V hotkey-overlay-title="Clipboard: Toggle" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
     Super+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+Ctrl+V hotkey-overlay-title="Toggle Floating" { toggle-window-floating; }
