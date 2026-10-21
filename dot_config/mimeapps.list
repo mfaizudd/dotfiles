@@ -25,7 +25,7 @@ image/png=com.interversehq.qView.desktop
 image/svg+xml=org.inkscape.Inkscape.desktop
 inode/directory=org.gnome.Nautilus.desktop
 text/css=nvim.desktop
-text/csv=libreoffice-calc.desktop
+text/csv=org.onlyoffice.desktopeditors.desktop
 text/html=firefox.desktop
 text/javascript=nvim.desktop
 text/markdown=nvim.desktop
@@ -58,6 +58,7 @@ application/x-ext-pdf=firefox.desktop
 application/x-gzpdf=firefox.desktop
 application/x-krita=krita_kra.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
+audio/x-vorbis+ogg=vlc.desktop
 
 [Added Associations]
 application/json=nvim.desktop;
@@ -79,7 +80,7 @@ audio/webm=mpv.desktop;vlc.desktop;
 audio/x-flac=mpv.desktop;vlc.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;org.kde.gwenview.desktop;org.kde.kate.desktop;nvim.desktop;com.interversehq.qView.desktop;krita_svg.desktop;com.github.flxzt.rnote.desktop;app.zen_browser.zen.desktop;org.onlyoffice.desktopeditors.desktop;dev.zed.Zed.desktop;org.kde.kwrite.desktop;vim.desktop;org.chromium.Chromium.desktop;
 inode/directory=org.kde.dolphin.desktop;org.kde.gwenview.desktop;nnn.desktop;xplr.desktop;org.kde.kate.desktop;qdirstat.desktop;org.gnome.Nautilus.desktop;
-text/csv=org.onlyoffice.desktopeditors.desktop;libreoffice-calc.desktop;
+text/csv=org.onlyoffice.desktopeditors.desktop;
 text/html=firefox-developer-edition.desktop;firefox.desktop;
 text/markdown=nvim.desktop;
 text/plain=dev.zed.Zed.desktop;nvim.desktop;
@@ -108,6 +109,7 @@ application/x-ext-pdf=firefox.desktop;
 application/x-gzpdf=firefox.desktop;
 application/x-krita=krita_kra.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
+audio/x-vorbis+ogg=vlc.desktop;
 
 [Removed Associations]
 model/stl=blender.desktop;
