@@ -1,4 +1,4 @@
-// DMS Window Rules - Managed by DankMaterialShell
+// DMS Window Rules - Managed by Dux Modular Shell
 // Do not edit manually - changes may be overwritten
 
 // @id=wr_1786879356614598247 @name=Alacritty
@@ -17,7 +17,7 @@ window-rule {
 
 // @id=dms-floating-windows @name=DMS Floating Windows
 window-rule {
-    match app-id="^com.danklinux.dms$"
+    match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"
     open-floating true
 }
 
@@ -25,4 +25,18 @@ window-rule {
 window-rule {
     match app-id="^it.mijorus.smile$"
     open-floating true
+}
+
+// @id=wr_1794964527843096130 @name=dev.zellij.Zellij
+window-rule {
+    match app-id="^dev.zellij.Zellij$"
+    background-effect {
+        blur true
+    }
+}
+
+// @id=dms-window-opaque @name=DMS Window Opaque
+window-rule {
+    match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"
+    opacity 1.00
 }
